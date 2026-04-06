@@ -1,4 +1,4 @@
-package com.dat.taxmanager.presentation.navigation
+package com.dat.taxmanagergit.presentation.navigation
 
 sealed class Screen(val route: String) {
     object Home : Screen("home_screen")
