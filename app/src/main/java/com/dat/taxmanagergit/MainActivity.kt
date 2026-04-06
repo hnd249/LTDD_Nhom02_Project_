@@ -1,4 +1,4 @@
-package com.dat.taxmanagergit
+package com.dat.taxmanager
 
 import android.Manifest
 import android.content.Context
