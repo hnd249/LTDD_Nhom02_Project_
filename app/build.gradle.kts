@@ -2,18 +2,19 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    // Dùng ksp và hilt
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
-    namespace = "com.dat.taxmanagergit"
-    compileSdk {
-        version = release(36)
-    }
+    namespace = "com.dat.taxmanager"
+    compileSdk = 36 // Đã sửa lại cú pháp chuẩn
 
     defaultConfig {
-        applicationId = "com.dat.taxmanagergit"
+        applicationId = "com.dat.taxmanager"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 36 // Đồng bộ với compileSdk
         versionCode = 1
         versionName = "1.0"
 
@@ -57,4 +58,25 @@ dependencies {
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     debugImplementation(libs.androidx.compose.ui.tooling)
     debugImplementation(libs.androidx.compose.ui.test.manifest)
+
+    // 1. Dagger - Hilt (Dependency Injection)
+    implementation("com.google.dagger:hilt-android:2.51.1")
+    ksp("com.google.dagger:hilt-android-compiler:2.51.1") // ĐÃ ĐỔI KAPT THÀNH KSP
+    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
+
+    // 2. Retrofit & OkHttp (Gọi API Backend)
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
+
+    // 3. Room Database (Lưu trữ Offline)
+    val room_version = "2.6.1"
+    implementation("androidx.room:room-runtime:$room_version")
+    ksp("androidx.room:room-compiler:$room_version") // ĐÃ ĐỔI KAPT THÀNH KSP
+    implementation("androidx.room:room-ktx:$room_version")
+
+    // 4. Coroutines & Lifecycle (Xử lý bất đồng bộ)
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
+    implementation("androidx.lifecycle:lifecycle-runtime-compose:2.6.2")
 }

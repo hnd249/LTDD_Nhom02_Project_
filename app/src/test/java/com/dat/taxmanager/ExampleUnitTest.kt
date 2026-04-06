@@ -1,4 +1,4 @@
-package com.dat.taxmanagergit
+package com.dat.taxmanager
 
 import org.junit.Test
 

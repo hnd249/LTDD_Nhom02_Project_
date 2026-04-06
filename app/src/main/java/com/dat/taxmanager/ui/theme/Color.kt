@@ -1,4 +1,4 @@
-package com.dat.taxmanagergit.ui.theme
+package com.dat.taxmanager.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
