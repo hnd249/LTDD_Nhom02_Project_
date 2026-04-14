@@ -23,9 +23,9 @@ Hệ thống cung cấp giải pháp toàn diện giúp người dùng cá nhân
 | STT | Họ và Tên | MSSV | Vai trò & Đóng góp |
 | :---: | :--- | :---: | :--- |
 | 1 | **Hồ Ngọc Đạt** (Leader) | 3120223027 | Thiết kế UI/UX, Android ViewModels, API Authentication |
-| 2 | **Trần Hữu Đức** | [Nhập MSSV] | Thiết kế Database Schema, Room DB, Dependency Injection (Hilt) |
-| 3 | **Nguyễn Thị Kim Nhung** | [Nhập MSSV] | Xây dựng thuật toán & Logic tính Thuế TNCN (TaxService) |
-| 4 | **Trần Quốc Đạt** | [Nhập MSSV] | Quản lý logic Giao dịch (Transactions), Base UI & Navigation |
+| 2 | **Trần Hữu Đức** | 3120223034 | Thiết kế Database Schema, Room DB, Dependency Injection (Hilt) |
+| 3 | **Nguyễn Thị Kim Nhung** | 3120223146 | Xây dựng thuật toán & Logic tính Thuế TNCN (TaxService) |
+| 4 | **Trần Quốc Đạt** | 3120223028 | Quản lý logic Giao dịch (Transactions), Base UI & Navigation |
 
 ---
 
