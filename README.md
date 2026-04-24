@@ -14,7 +14,7 @@ Hệ thống cung cấp giải pháp toàn diện giúp người dùng cá nhân
 
 - **Trường:** Đại học Sư phạm - Đại học Đà Nẵng
 - **Lớp:** 23CNTT2
-- **Giảng viên hướng dẫn:** TS. Đinh Thị Mỹ Hạnh
+- **Giảng viên hướng dẫn:** TS. Nguyễn Hoàng Hải
 
 ---
 
